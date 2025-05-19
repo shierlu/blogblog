@@ -1707,26 +1707,26 @@ button {
   padding-left: 10px;
   padding-right: 10px;
 }
-.vcard .vh .vcontent {
-  color: #00bfa5 !important;
+.v[data-class="v"] textarea {
+  color: #ff69b4 !important;
 }
-#vcomment {
-  color: #00bfa5 !important;
+.v[data-class="v"] .vcards .vcard .vh .vcontent {
+  color: #ff69b4 !important;
 }
-#vcomment [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-#vcomment .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-#vcomment .theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-#vcomment .night .v[data-class="v"] .vcards .vcard .vcontent.expand::after {
+[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.night .v[data-class="v"] .vcards .vcard .vcontent.expand::after {
   background: var(--color-wrap) !important;
 }
-#vcomment [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-#vcomment .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-#vcomment .theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-#vcomment .night .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
+[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.night .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
   --valine-linear-gradient-color: color-mix(in srgb, var(--color-wrap) 10%, transparent);
   background: linear-gradient(180deg, var(--valine-linear-gradient-color), var(--color-wrap)) !important;
 }
-#vcomment .v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
+.v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
   color: var(--red-1) !important;
 }
 .wl-content,
