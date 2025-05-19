@@ -349,6 +349,11 @@
       
       
       
+        <a data-aos="zoom-in" href="/about/index.html#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/about/" itemprop="commentCount"></span>
+          留言
+        </a>
+      
       
         <a data-aos="zoom-in" href="/about/index.html#comments" class="article-comment-link">
           <span class="post-comments-count waline-comment-count" data-path="/about/index.html" itemprop="commentCount"></span>
@@ -389,6 +394,10 @@
       <div class="comment-selector">
         <div class="comment-selector-wrap">
             
+            <div class="selector-item" data-selector="valine">
+              <span>valine</span>
+            </div>
+            
             <div class="selector-item" data-selector="waline">
               <span>waline</span>
             </div>
@@ -397,6 +406,10 @@
       </div>
     </div>
     <div class="comment-content">
+      
+        <div class="comment valine-comment" data-aos="fade-up"
+          id="valine-comment">
+        </div>
       
         <div class="comment waline-comment" data-aos="fade-up"
           id="waline-comment">
@@ -842,7 +855,7 @@
   var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
   var commentConfig = {
     valine: {
-      enable: false,
+      enable: true,
       load: () => {
         const container = document.querySelector('.valine-comment');
         if (!container) return;
@@ -865,8 +878,8 @@
           if (window.Valine) {
             new Valine({
               el: '.valine-comment',
-              appId: "",
-              appKey: "",
+              appId: "QL9Jti3IKGsjpwo1LjKJPXD3-MdYXbMMI",
+              appKey: "aXhem7OqjVOnpRKck0YApqEe",
               placeholder: "Just go go",
               pageSize: '10',
               avatar: 'mp',
