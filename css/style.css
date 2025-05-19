@@ -1703,24 +1703,25 @@ button {
   color: #fff;
   background-color: var(--red-1);
 }
-.wl-emoji-popup {
-  max-width: calc(100vw - 90px) !important;
+.vcontent {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.wl-count {
-  color: var(--color-default);
+[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
+.night .v[data-class="v"] .vcards .vcard .vcontent.expand::after {
+  background: var(--color-wrap) !important;
 }
-.wl-header input {
-  font-size: revert !important;
+[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
+.night .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
+  --valine-linear-gradient-color: color-mix(in srgb, var(--color-wrap) 10%, transparent);
+  background: linear-gradient(180deg, var(--valine-linear-gradient-color), var(--color-wrap)) !important;
 }
-.wl-panel {
-  margin: 0.5em 0 !important;
-}
-.wl-action,
-.wl-sort li {
-  cursor: var(--cursor-pointer) !important;
-}
-.wl-header label {
-  cursor: var(--cursor-default) !important;
+.v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
+  color: var(--red-1) !important;
 }
 .wl-content,
 .vcontent,

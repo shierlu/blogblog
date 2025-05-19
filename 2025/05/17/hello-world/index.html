@@ -59,12 +59,6 @@
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
   
   
-    
-      
-<link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css" integrity="sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy+Ub9QgnxUYJmwOhYCK" crossorigin="anonymous">
-
-    
-  
   
   
     
@@ -386,18 +380,8 @@
         </a>
       
       
-        <a data-aos="zoom-in" href="/2025/05/17/hello-world/#comments" class="article-comment-link">
-          <span class="post-comments-count waline-comment-count" data-path="/2025/05/17/hello-world/" itemprop="commentCount"></span>
-          留言
-        </a>
       
       
-      
-      
-        <span data-aos="zoom-in" class="article-visitor-link">
-          <span class="waline-pageview-count" data-path="/2025/05/17/hello-world/">0</span>
-          <em class="post-meta-item-text">阅读量</em>
-        </span>
       
       
 
@@ -451,10 +435,6 @@
               <span>valine</span>
             </div>
             
-            <div class="selector-item" data-selector="waline">
-              <span>waline</span>
-            </div>
-            
         </div>
       </div>
     </div>
@@ -462,10 +442,6 @@
       
         <div class="comment valine-comment" data-aos="fade-up"
           id="valine-comment">
-        </div>
-      
-        <div class="comment waline-comment" data-aos="fade-up"
-          id="waline-comment">
         </div>
       
     </div>
@@ -968,7 +944,7 @@
       }
     },
     waline: {
-      enable: true,
+      enable: false,
       load: async () => {
         const container = document.querySelector('.waline-comment');
         if (!container) return;
