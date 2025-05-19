@@ -2,7 +2,7 @@
   <!DOCTYPE html>
   <html lang="zh-CN"  
     
-      data-theme-mode="auto"
+      data-theme-mode="true"
     
   >
   <head>
@@ -229,7 +229,7 @@
   </div>
 </header>
 
-        <div id="content"  class="sidebar-right" >
+        <div id="content" class="sidebar-left"  >
           <aside id="sidebar">
   
   
@@ -761,6 +761,15 @@
 <script src="/js/pjax.js"></script>
 
 
+
+
+  <script>
+    function initLive2d() {
+      live2d.init("https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/", {themeTipsPath: ""});
+    }
+  </script>
+  
+<script src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js" onload="initLive2d &amp;&amp; initLive2d()" async></script>
 
 
 

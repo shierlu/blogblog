@@ -1711,7 +1711,7 @@ button {
   color: #ff4543 !important;
 }
 .v[data-class="v"] input {
-  color: #060606 !important;
+  color: #fff !important;
 }
 [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
 .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
@@ -2716,6 +2716,12 @@ pre .javascript .function {
   font-size: 12px;
   margin-right: 5px;
 }
+#live2d-toggle {
+  z-index: 1;
+}
+#live2d-plugin {
+  z-index: 98 !important;
+}
 .sidebar-top {
   position: fixed;
   bottom: 30px;
@@ -3369,7 +3375,16 @@ pre .javascript .function {
   margin: 0 !important;
 }
 .aplayer.aplayer-fixed .aplayer-body {
-  background: var(--color-wrap) !important;
+  position: fixed !important; /* 固定定位 */
+  top: 56px !important; /* 距离顶部10px */
+  left: 0px !important; /* 距离左边10px */
+  right: auto !important; /* 取消右边定位 */
+  bottom: auto !important; /* 取消底部定位 */
+  margin: 0 !important; /* 取消外边距 */
+  width: 320px !important; /* 可以根据需要调整播放器宽度 */
+  border-radius: 8px !important; /* 圆角 */
+  border: 1px solid var(--color-h2-border) !important;
+  background: var(--color-wrap) !important; /* 背景色，保持一致 */
   transition: all 0.3s;
 }
 .aplayer.aplayer-fixed .aplayer-info {
@@ -3377,7 +3392,16 @@ pre .javascript .function {
   border-top: 1px solid var(--color-h2-border) !important;
 }
 .aplayer.aplayer-fixed .aplayer-list {
+  position: fixed !important; /* 固定定位 */
+  top: 122px !important; /* 距离顶部10px */
+  left: 0px !important; /* 距离左边10px */
+  right: auto !important; /* 取消右边定位 */
+  bottom: auto !important; /* 取消底部定位 */
+  margin: 0 !important; /* 取消外边距 */
+  width: 337px !important; /* 可以根据需要调整播放器宽度 */
+  border-radius: 8px !important; /* 圆角 */
   border: 1px solid var(--color-h2-border) !important;
+  background: var(--color-wrap) !important; /* 背景色，保持一致 */
   transition: all 0.3s;
 }
 .aplayer.aplayer-withlist .aplayer-info {
