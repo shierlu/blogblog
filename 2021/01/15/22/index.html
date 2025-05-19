@@ -618,8 +618,23 @@
       </div>
     
     
-      <div id="aplayer" theme="var(--color-link)"></div>
     
+      <meting-js
+        theme="var(--color-link)"
+        id="7249286350"
+        server="netease"
+        type="playlist"
+        
+        fixed="true"
+        autoplay="false"
+        loop="all"
+        order="list"
+        preload="auto"
+        volume="0.7"
+        mutex="true"
+        list-folded="false"
+        lrc-type="0"
+      ></meting-js>
     
     
 <script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
@@ -1239,36 +1254,26 @@
 <script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
 
   
-    <script>
-      var isMobile = window.matchMedia('(max-width: 959px)').matches;
-      if (isMobile) {
-      const aplayer = _$('#aplayer');
-        if (aplayer) {
-          const aside = aplayer.parentNode;
-          if (aside?.tagName === 'ASIDE') {
-            aplayer.removeAttribute('data-aos');
-            aside.removeChild(aplayer);
-            document.body.appendChild(aplayer);
-          }
+
+
+
+  
+  <script>
+    var isMobile = window.matchMedia('(max-width: 959px)').matches;
+    if (isMobile) {
+      const meting = _$('meting-js');
+      if (meting) {
+        meting.setAttribute('fixed', 'true');
+        const aside = meting.parentNode;
+        if (aside?.tagName === 'ASIDE') {
+          aside.removeChild(meting);
+          document.body.appendChild(meting);
         }
       }
-      const ap = new APlayer({
-        theme: "var(--color-link)",
-        container: document.getElementById('aplayer'),
-        audio: [{"name":"怎么说我不爱你","artist":"萧敬腾","url":"/audio/212.mp3","cover":"/image/R-C.jpg"}] || [],
-        fixed: isMobile ? true : (true || false),
-        autoplay: false || false,
-        loop: 'all' || 'all',
-        order: 'list' || 'list',
-        preload: 'auto' || 'auto',
-        volume: 0.7 || 0.7,
-        mutex: true || true,
-        listFolded: false || false,
-        lrcType: 0 || 0,
-      });
-    </script>
+    }
+  </script>
   
-
+<script src="https://npm.webcache.cn/meting@2.0.1/dist/Meting.min.js" integrity="sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S&#x2F;IyB+Y4JG+ZDU7GpKE8" crossorigin="anonymous"></script>
 
 
 
