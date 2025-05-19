@@ -1710,7 +1710,7 @@ button {
 .v[data-class="v"] textarea {
   color: #ff69b4 !important;
 }
-.v[data-class="v"] .vcards .vh.vcontent {
+.v[data-class="v"] .vcards .vcontent.vcontent {
   color: #ff69b4 !important;
 }
 [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
