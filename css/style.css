@@ -1708,7 +1708,10 @@ button {
   padding-right: 10px;
 }
 .v[data-class="v"] textarea {
-  color: #ff5435 !important;
+  color: #ff4543 !important;
+}
+.v[data-class="v"] input {
+  color: #060606 !important;
 }
 [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
 .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
