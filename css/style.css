@@ -10,7 +10,7 @@
   --grey-9: #888;
   --grey-7: var(--color-default);
   --color-archive-year: #000;
-  --color-default: #555;
+  --color-default: #7b1010;
   --color-border: var(--red-3);
   --color-link: var(--red-1);
   --color-background: #eee;
@@ -1706,6 +1706,9 @@ button {
 .vcontent {
   padding-left: 10px;
   padding-right: 10px;
+}
+.v[data-class="v"] {
+  color: #ff69b4 !important;
 }
 [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
 .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
