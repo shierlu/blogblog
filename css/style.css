@@ -1707,12 +1707,6 @@ button {
   padding-left: 10px;
   padding-right: 10px;
 }
-.v[data-class="v"] textarea {
-  color: #ff69b4 !important;
-}
-.v[data-class="v"] .vcards .vcard .vcontent {
-  color: #ff69b4 !important;
-}
 [data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
 .dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
 .theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
