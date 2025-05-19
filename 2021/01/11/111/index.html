@@ -906,7 +906,7 @@
         );
         script.onload = () => {
           var GUEST_INFO = ['nick', 'mail', 'link'];
-          var guest_info = 'nick,mail'.split(',').filter((item) => {
+          var guest_info = 'nick,mail,link'.split(',').filter((item) => {
             return GUEST_INFO.indexOf(item) > -1
           });
           var recordIP = JSON.parse('true');
